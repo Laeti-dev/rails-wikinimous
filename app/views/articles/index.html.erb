@@ -1,0 +1,17 @@
+<div class="container-fluid">
+  <nav class="navbar fixed-top navbar-light bg-light flex-rows">
+    <a class="navbar-brand" href="#">Wiknimous</a>
+    <a class="navbar-brand" href="#">New article</a>
+  </nav>
+</div>
+
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <% @articles.each do |article|%>
+        <h1><%= article.title %></h1>
+        <p> <%= article.content %></p>
+      <% end %>
+    </div>
+  </div>
+</div>
